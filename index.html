@@ -23,6 +23,16 @@
      //alert("sampleFunction");
      document.write('JavaScriptが実行されました！');
     }
+   
+    function testFunction(){
+     var now = new Date();
+     var hour = now.getHours();
+     var min  = now.getMinutes();
+     var sec  = now.getSeconds();
+
+     // JavaScriptからAndroidへ
+     android.MyMethod(hour + ':' + min + ':' + sec);
+   }
   </script>
  </body>
 </html>
