@@ -18,13 +18,15 @@
       ハイパーテキストによるHTML間の連携が可能である。</p>
   </article>
   
+  <input type="button" onclick="hoge();"  value="Javaのメソッドを実行する">
+  
   <script>
     function sampleFunction(){
      //alert("sampleFunction");
      document.write('JavaScriptが実行されました！');
     }
    
-    function testFunction(){
+    function hoge(){
      var now = new Date();
      var hour = now.getHours();
      var min  = now.getMinutes();
